@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @member.first_name %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @member.last_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @member.email %>
+</p>
+
+<p><%= image_tag attachment_url(@member, :avatar, :fill, 300, 300, format: "jpg") %> </p>
+
+<%= link_to 'Edit', edit_member_path(@member) %> |
+<%= link_to 'Back', members_path %>

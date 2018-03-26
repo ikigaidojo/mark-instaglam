@@ -39,6 +39,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem "awesome_print", "1.8.0"
 end
 
 group :development do
@@ -52,3 +53,7 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+#Use refile gem for uploading images
+gem "refile", require: "refile/rails", github: "refile/refile"
+gem "refile-mini_magick"
