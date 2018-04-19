@@ -1,4 +1,15 @@
-<h1>Editing member</h1>
+<h1>Edit Profile</h1>
+
+<nav>
+  <ul>
+    <li><h1>Instaglam</h1></li>
+    <li><a href="home.html">Home</a></li>
+    <li>Notification</li>
+   <!--  <li><a href="profile.html">Profile</a></li> -->
+    <li><%= link_to 'Profile', @member %></li>
+    <li><a href="login.html">Log out</a></li>
+  </ul>
+  </nav>
 
 <%= render 'form', post: @member %>
 

@@ -25,10 +25,15 @@
    <%= form.text_field :last_name, id: :post_last_name %>
  </div>
 
- <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email, id: :post_email %>
-  </div>
+   <div class="field">
+      <%= form.label :email %>
+      <%= form.text_field :email, id: :post_email %>
+    </div>
+
+    <div class="field">
+       <%= form.label :mobile_phone %>
+       <%= form.text_field :mobile_phone, id: :mobile_phone %>
+     </div>
 
   <div class="actions">
     <%= form.submit %>

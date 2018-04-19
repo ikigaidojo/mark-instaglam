@@ -1,21 +1,33 @@
-
 <p id="notice"><%= notice %></p>
 
-<h1 align="center">members</h1>
+<!-- <h1 align="center">members</h1> -->
 
-<table align="center" style="color: tomato;">
+<nav>
+  <ul>
+    <% @members.each do |member| %>
+    <li><h1>Instaglam</h1></li>
+    <!-- <li><a href="home.html">Home</a></li> -->
+    <li><%= link_to 'Home', members_path %></li>
+    <li>Notification</li>
+   <!--  <li><a href="profile.html">Profile</a></li> -->
+    <li><%= link_to 'Profile', member %></li>
+    <li><a href="login.html">Log out</a></li>
+     <% end %>
+  </ul>
+</nav>
+
+<!-- <table align="center" style="color: tomato;" border="1">
   <thead>
     <tr>
-      <th colspan="4">Profile</th>
+      <th colspan="8">Profile</th>
     </tr>
-  </thead>
+  </thead> -->
 
-  <tbody>
+<!--   <tbody>
     <% @members.each do |member| %>
       <tr>
         <td><%= member.first_name %></td>
         <td><%= member.last_name %></td>
-        <td><%= member.password %></td>
         <td><%= member.email %></td>
         <td><%= member.mobile_phone %></td>
         <td><%= link_to 'Show', member %></td>
@@ -23,7 +35,7 @@
         <td><%= link_to 'Destroy', member, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
       <tr>
-        <td colspan="4"><%= image_tag attachment_url(member, :avatar, :fill, 300, 300, format: "jpg") %></td>
+        <td colspan="8" align="center"><%= image_tag attachment_url(member, :avatar, :fill, 300, 300, format: "jpg") %></td>
       </tr>
     <% end %>
   </tbody>
@@ -31,4 +43,17 @@
 
 <br>
 
+<button style="a { text-decoration: none; }">
 <%= link_to 'New member', new_member_path %>
+</button> -->
+
+<input type="button" value="upload picture"><br/><br/>
+<a href="https://placeholder.com"><img src="http://via.placeholder.com/400x600"></a><br/>
+<input type="text" placeholder="comment" ><br/></br>
+<a href="https://placeholder.com"><img src="http://via.placeholder.com/400x600"></a><br/>
+<input type="text" placeholder="comment" ><br/></br>
+<a href="https://placeholder.com"><img src="http://via.placeholder.com/400x600"></a><br/>
+<input type="text" placeholder="comment" ><br/></br>
+<a href="https://placeholder.com"><img src="http://via.placeholder.com/400x600"></a><br/>
+<input type="text" placeholder="comment" ><br/></br>
+<a href="https://placeholder.com"><img src="http://via.placeholder.com/400x600"></a>

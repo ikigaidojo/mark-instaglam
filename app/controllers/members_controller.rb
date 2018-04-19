@@ -70,6 +70,6 @@ class MembersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def member_params
-      params.require(:member).permit(:first_name, :last_name, :email, :avatar) #if you're addinng new parameter no need to add line just add it to params.require -commend added by me.
+      params.require(:member).permit(:first_name, :last_name, :email, :mobile_phone, :avatar) #if you're addinng new parameter no need to add line just add it to params.require -commend added by me.
     end
 end
